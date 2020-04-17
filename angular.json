@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Fronthw"
+    }
+  },
+  "defaultProject": "Fronthw",
+  "cli": {
+    "analytics": false
+  }
 }
