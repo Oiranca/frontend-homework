@@ -1,0 +1,35 @@
+#image-logo {
+  height: 200px;
+  border-color: #259DF2;
+  border-radius: 40px;
+}
+
+
+#text-login {
+  text-align: center;
+  color: #40AFFF;
+  font-family: 'Abril Fatface', cursive;
+
+
+
+}
+
+#inputEmail, #inputPassword {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  border: white;
+  border-bottom: 2px solid #259DF2;
+
+
+}
+
+
+.button-login {
+  color: #259DF2;
+  font-family: 'Merriweather', serif;
+  border-color: #F29F24;
+
+}
+

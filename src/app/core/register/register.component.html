@@ -1,0 +1,94 @@
+<div class="container">
+
+  <div class="row mt-3 justify-content-center">
+
+    <img src="../../../assets/homework_200x200.png" class="figure-img img-thumbnail " alt="Responsive image"
+         id="image-logo">
+
+  </div>
+  <div class="display-3 mt-3 justify-content-center" id="text-register">
+
+    <p >Registarse</p>
+
+  </div>
+
+  <form class="user-register mt-5" novalidate>
+    <div class="form-row">
+
+      <div class="form-group col-md-6">
+        <label class="labels-input" for="inputName">Nombre</label>
+        <input type="text" class="form-control" placeholder="Nombre" id="inputName" required autofocus>
+        <div class="invalid-feedback">
+          Debes introducir el nombre
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label class="labels-input" for="inputLastName">Apellidos</label>
+        <input type="text" class="form-control" placeholder="Apellidos" id="inputLastName" required autofocus>
+        <div class="invalid-feedback">
+          Debes introducir los apellidos
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row mt-3">
+      <div class="form-group col-md-6">
+        <label class="labels-input" for="inputPassword">Contraseña</label>
+        <input type="password" class="form-control" placeholder="Contraseña" id="inputPassword" required
+               autofocus>
+        <div class="invalid-feedback">
+          Debes introducir la contraseña debe tener 8 caracteres alfanuméricos
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label class="labels-input" for="inputRepeatPass">Repetir contraseña</label>
+        <input type="password" class="form-control" placeholder="Repetir contraseña" id="inputRepeatPass"
+               required autofocus>
+        <div class="invalid-feedback">
+          Las contraseñas no coinciden
+        </div>
+      </div>
+    </div>
+    <div class="form-row mt-3">
+      <div class="form-group col-md-6">
+        <label class="labels-input" for="inputEmail">Email</label>
+        <input type="email" class="form-control" placeholder="Email" id="inputEmail" required autofocus>
+        <div class="invalid-feedback">
+          Email con formato invalido
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label class="labels-input" for="inputRepeatEmail">Repetir email</label>
+        <input type="email" class="form-control" placeholder="Repetir email" id="inputRepeatEmail" required
+               autofocus>
+        <div class="invalid-feedback">
+          Email no coincide
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row mt-3 justify-content-center" style="border-bottom: 2px solid #F29F24">
+      <div class="col-md-3 mb-3">
+        <label class="labels-input" for="selectTypeUsers">Administrador o
+          familiar </label>
+        <select class="custom-select" id="selectTypeUsers" required>
+          <option selected disabled value="">Seleccionar...</option>
+          <option>Administrador</option>
+          <option>Familiar</option>
+        </select>
+        <div class="invalid-feedback">
+          Debes selccionar una opción
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row justify-content-center mt-3">
+      <button class="btn common-button" type="submit">Aceptar</button>
+    </div>
+  </form>
+
+</div>
+<div class="mt-5">
+  <app-footer></app-footer>
+</div>
