@@ -1,0 +1,32 @@
+
+#text-register {
+  text-align: center;
+  color: #40AFFF;
+  font-family: 'Abril Fatface', cursive;
+  border-top: 2px solid #F29F24;
+}
+
+.labels-input {
+  font-family: 'Merriweather', serif;
+  color: #40AFFF;
+  font-size: 18px;
+
+}
+
+.btn {
+  color: #259DF2;
+  font-family: 'Merriweather', serif;
+  border-color: #F29F24;
+}
+
+
+#inputEmail, #inputPassword {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  border: white;
+  border-bottom: 2px solid #259DF2;
+
+
+}

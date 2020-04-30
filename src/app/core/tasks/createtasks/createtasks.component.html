@@ -1,0 +1,43 @@
+<div class="container">
+
+  <div class="display-4 mt-3 justify-content-center" id="text-register">
+    <p>Crea tareas</p>
+
+  </div>
+
+  <form class="user-register flex-column">
+
+
+      <div class="form-row justify-content-center">
+        <div class="col-md-6">
+          <label class="labels-input" for="inputNameTask">Nombre de tarea</label>
+          <input type="text" class="form-control" placeholder="Nombre de tarea" id="inputNameTask" required autofocus>
+          <div class="invalid-feedback">
+            Debes introducir el nombre de la tarea
+          </div>
+        </div>
+      </div>
+      <div class="form-row mt-3 justify-content-center">
+        <div class="col-md-9">
+          <label class="labels-input" for="inputDescription">Descripción de la tarea</label>
+          <textarea class="form-control" placeholder="Descripción de la tarea" id="inputDescription" rows="4" required autofocus></textarea>
+          <div class="invalid-feedback">
+            Debes introducir una pequeña descipción
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    <div class="row justify-content-center mt-3">
+      <button class="btn common-button" type="submit">Aceptar</button>
+    </div>
+  </form>
+  <div class="mt-5">
+    <app-footer></app-footer>
+  </div>
+</div>
+
