@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { routing } from './app.routing';
+import { ReportsComponent } from './core/reports/reports.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { routing } from './app.routing';
     RegisterComponent,
     TasksComponent,
     AssigntasksComponent,
-    CreatetasksComponent
+    CreatetasksComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,
