@@ -18,9 +18,11 @@
 }
 
 .btn {
-  color: #259DF2;
+
   font-family: 'Merriweather', serif;
   border-color: #F29F24;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 #inputPassword, #inputEmail, #inputName, #inputLastName, #inputRepeatEmail, #inputRepeatPass, #selectTypeUsers{

@@ -14,6 +14,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { routing } from './app.routing';
 import { ReportsComponent } from './core/reports/reports.component';
+import { ProfilesComponent } from './core/profiles/profiles.component';
+import { ManagefamilyComponent } from './core/managefamily/managefamily.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { ReportsComponent } from './core/reports/reports.component';
     TasksComponent,
     AssigntasksComponent,
     CreatetasksComponent,
-    ReportsComponent
+    ReportsComponent,
+    ProfilesComponent,
+    ManagefamilyComponent
   ],
   imports: [
     BrowserModule,

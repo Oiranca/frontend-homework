@@ -5,6 +5,8 @@ import { AssigntasksComponent } from './core/tasks/assigntasks/assigntasks.compo
 import { CreatetasksComponent } from './core/tasks/createtasks/createtasks.component';
 import { TasksComponent } from './core/tasks/tasks.component';
 import { ReportsComponent } from './core/reports/reports.component';
+import { ProfilesComponent } from './core/profiles/profiles.component';
+import { ManagefamilyComponent } from './core/managefamily/managefamily.component';
 
 
 
@@ -16,5 +18,7 @@ const appRoutes = [
       { path: 'newtasks', component: CreatetasksComponent, pathMatch: 'full' }
     ] },
   { path: 'reports', component: ReportsComponent, pathMatch: 'full' },
+  { path: 'profiles', component: ProfilesComponent, pathMatch: 'full' },
+  { path: 'managefamily', component: ManagefamilyComponent, pathMatch: 'full' },
 ];
 export const routing = RouterModule.forRoot(appRoutes);
