@@ -1,20 +1,18 @@
-#image-logo {
-  height: 200px;
-  border-color: #259DF2;
-  border-radius: 40px;
-}
+
 
 #text-register {
   text-align: center;
   color: #40AFFF;
   font-family: 'Abril Fatface', cursive;
-  border-top: 2px solid #F29F24;
+  border-bottom: 2px solid #F29F24;
+
 }
 
-.labels-input,#check-tasks {
+#check-tasks {
   font-family: 'Merriweather', serif;
   color: #40AFFF;
   font-size: 18px;
+  border-bottom: 2px solid #F29F24;
 
 }
 
@@ -24,8 +22,4 @@
   border-color: #F29F24;
 }
 
-#inputPassword, #inputEmail, #inputName, #inputLastName, #inputRepeatEmail, #inputRepeatPass{
-  font-family: 'Merriweather', serif;
-  border: 1px solid #F29F24;
-  font-size: 16px;
-}
+
