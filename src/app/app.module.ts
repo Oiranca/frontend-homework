@@ -17,6 +17,8 @@ import { ReportsComponent } from './core/reports/reports.component';
 import { ProfilesComponent } from './core/profiles/profiles.component';
 import { ManagefamilyComponent } from './core/managefamily/managefamily.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RegisterfamilyComponent } from './core/register/component/registerfamily/registerfamily.component';
+import { RegisteradminComponent } from './core/register/component/registeradmin/registeradmin.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CreatetasksComponent,
     ReportsComponent,
     ProfilesComponent,
-    ManagefamilyComponent
+    ManagefamilyComponent,
+    RegisterfamilyComponent,
+    RegisteradminComponent
   ],
   imports: [
     BrowserModule,

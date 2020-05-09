@@ -7,18 +7,25 @@ import { TasksComponent } from './core/tasks/tasks.component';
 import { ReportsComponent } from './core/reports/reports.component';
 import { ProfilesComponent } from './core/profiles/profiles.component';
 import { ManagefamilyComponent } from './core/managefamily/managefamily.component';
-
+import { RegisteradminComponent } from './core/register/component/registeradmin/registeradmin.component';
 
 
 const appRoutes = [
   { path: '', component: LoginComponent, pathMatch: 'full' },
-  { path: 'register', component: RegisterComponent, pathMatch: 'full' },
-  { path: 'tasks', component: TasksComponent, children: [
+  {
+    path: 'register', component: RegisterComponent, children: [
+      { path: 'admin', component: RegisteradminComponent, pathMatch: 'full' }
+
+    ]
+  },
+  {
+    path: 'tasks', component: TasksComponent, children: [
       { path: '', component: AssigntasksComponent, pathMatch: 'full' },
       { path: 'newtasks', component: CreatetasksComponent, pathMatch: 'full' }
-    ] },
+    ]
+  },
   { path: 'reports', component: ReportsComponent, pathMatch: 'full' },
   { path: 'profiles', component: ProfilesComponent, pathMatch: 'full' },
-  { path: 'managefamily', component: ManagefamilyComponent, pathMatch: 'full' },
+  { path: 'managefamily', component: ManagefamilyComponent, pathMatch: 'full' }
 ];
 export const routing = RouterModule.forRoot(appRoutes);
