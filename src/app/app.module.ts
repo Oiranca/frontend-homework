@@ -16,6 +16,7 @@ import { routing } from './app.routing';
 import { ReportsComponent } from './core/reports/reports.component';
 import { ProfilesComponent } from './core/profiles/profiles.component';
 import { ManagefamilyComponent } from './core/managefamily/managefamily.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ManagefamilyComponent } from './core/managefamily/managefamily.componen
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
-    routing
+    routing,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

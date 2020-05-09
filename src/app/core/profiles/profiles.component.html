@@ -36,15 +36,21 @@
         <label class="labels-input" for="inputPassword">Contraseña</label>
         <input type="password" class="form-control" placeholder="Contraseña" id="inputPassword" required
                autofocus>
-        <div class="invalid-feedback">
-          Debes introducir la contraseña debe tener 8 caracteres alfanuméricos
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Formato incorrecto: </strong>Debe contener caractéres alfanuméricos y con longitud min 8 y máx de 20
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
       </div>
       <div class="form-group col-md-6">
         <label class="labels-input" for="inputEmail">Email</label>
         <input type="email" class="form-control" placeholder="Email" id="inputEmail" required autofocus>
-        <div class="invalid-feedback">
-          Email con formato invalido
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Formato incorrecto: </strong>Ejemplo example@example.com
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
       </div>
     </div>

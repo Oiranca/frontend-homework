@@ -11,7 +11,7 @@
   border-top: 2px solid #F29F24;
 }
 
-.labels-input {
+.labels-input, #roleSelect {
   font-family: 'Merriweather', serif;
   color: #40AFFF;
   font-size: 18px;
@@ -25,8 +25,9 @@
   margin-left: 40px;
 }
 
-#inputPassword, #inputEmail, #inputName, #inputLastName, #inputRepeatEmail, #inputRepeatPass, #selectTypeUsers{
+#password, #email, #name, #lastName, #reEmail, #rePassword{
   font-family: 'Merriweather', serif;
   border: 1px solid #F29F24;
   font-size: 16px;
 }
+
