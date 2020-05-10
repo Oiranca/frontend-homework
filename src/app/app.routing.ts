@@ -8,13 +8,15 @@ import { ReportsComponent } from './core/reports/reports.component';
 import { ProfilesComponent } from './core/profiles/profiles.component';
 import { ManagefamilyComponent } from './core/managefamily/managefamily.component';
 import { RegisteradminComponent } from './core/register/component/registeradmin/registeradmin.component';
+import { RegisterfamilyComponent } from './core/register/component/registerfamily/registerfamily.component';
 
 
 const appRoutes = [
   { path: '', component: LoginComponent, pathMatch: 'full' },
   {
     path: 'register', component: RegisterComponent, children: [
-      { path: 'admin', component: RegisteradminComponent, pathMatch: 'full' }
+      { path: 'admin', component: RegisteradminComponent, pathMatch: 'full' },
+      { path: 'family', component: RegisterfamilyComponent, pathMatch: 'full' }
 
     ]
   },

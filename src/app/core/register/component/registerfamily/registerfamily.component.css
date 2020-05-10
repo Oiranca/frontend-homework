@@ -1,0 +1,39 @@
+
+#text-register {
+  text-align: center;
+  color: #40AFFF;
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  font-weight: bold;
+  border-top: 1px solid #F29F24;
+  border-bottom: 1px solid #F29F24;
+
+
+
+}
+
+.labels-input, #roleSelect {
+  font-family: 'Merriweather', serif;
+  color: #40AFFF;
+  font-size: 18px;
+}
+
+.btn {
+
+  font-family: 'Merriweather', serif;
+  border-color: #F29F24;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+#password, #email, #name, #lastName, #reEmail, #rePassword, #adminEmail{
+  font-family: 'Merriweather', serif;
+  border: 1px solid #F29F24;
+  font-size: 16px;
+}
+
+.spanAlert{
+  color: red;
+  font-family: 'Merriweather', serif;
+
+}

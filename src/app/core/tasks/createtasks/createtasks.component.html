@@ -1,34 +1,52 @@
 <div class="container">
 
-  <div class="display-4 mt-3 justify-content-center" id="text-register">
-    <p>Crea tareas</p>
+  <div class="mt-1">
+    <h1 id="text-register">Crea tareas</h1>
 
   </div>
 
-  <form class="user-register flex-column">
-
+  <form class="user-register " [formGroup]="validationTasks" (ngSubmit)="onRegistrationFormSubmit()">
 
       <div class="form-row justify-content-center">
-        <div class="col-md-6">
-          <label class="labels-input" for="inputNameTask">Nombre de tarea</label>
-          <input type="text" class="form-control" placeholder="Nombre de tarea" id="inputNameTask" required autofocus>
-          <div class="invalid-feedback">
-            Debes introducir el nombre de la tarea
+        <div class="form-group col-md-6">
+          <label class="labels-input" for="nameTasks">Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre de la tarea" id="nameTasks" formControlName="nameTasks" autofocus>
+          <div *ngIf="validationTasks.get('nameTasks').errors  && isSubmitted">
+            <div *ngIf="validationTasks.get('nameTasks').hasError('required')">
+              <span class="spanAlert">Campo nombre de la tarea obligatorio</span>
+            </div>
+            <div *ngIf="validationTasks.get('nameTasks').hasError('minlength')">
+              <span class="spanAlert">Mínimo tres letras</span>
+            </div>
+            <div *ngIf="validationTasks.get('nameTasks').hasError('maxlength')">
+              <span class="spanAlert">Maximo 30 caracteres</span>
+            </div>
+            <div *ngIf="validationTasks.get('nameTasks').hasError('pattern')">
+              <span class="spanAlert">Solamente se admiten letras</span>
+            </div>
           </div>
         </div>
       </div>
       <div class="form-row mt-3 justify-content-center">
         <div class="col-md-9">
           <label class="labels-input" for="inputDescription">Descripción de la tarea</label>
-          <textarea class="form-control" placeholder="Descripción de la tarea" id="inputDescription" rows="4" required autofocus></textarea>
-          <div class="invalid-feedback">
-            Debes introducir una pequeña descipción
+          <textarea class="form-control" placeholder="Descripción de la tarea" id="inputDescription" rows="4" formControlName="textTasks" autofocus></textarea>
+          <div *ngIf="validationTasks.get('textTasks').errors  && isSubmitted || checkTasks()">
+            <div >
+              <span class="spanAlert">Descripción de la tarea obligatorio</span>
+            </div>
+            <div *ngIf="validationTasks.get('textTasks').hasError('minlength')">
+              <span class="spanAlert">Mínimo tres letras</span>
+            </div>
+            <div *ngIf="validationTasks.get('textTasks').hasError('maxlength')">
+              <span class="spanAlert">Maximo 30 caracteres</span>
+            </div>
+            <div *ngIf="validationTasks.get('textTasks').hasError('pattern')">
+              <span class="spanAlert">Solamente se admiten letras</span>
+            </div>
           </div>
         </div>
-      </div>
-
-
-
+        </div>
 
 
 

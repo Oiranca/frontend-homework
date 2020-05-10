@@ -2,23 +2,10 @@
   <div>
     <app-applicationnavbar></app-applicationnavbar>
   </div>
-  <div class="display-4 mt-3 justify-content-center" id="text-register">
+  <div class="display-4 mt-1 justify-content-center" id="text-register">
     <p>Tareas</p>
   </div>
-  <div class="form-row justify-content-center" id="check-tasks">
-
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" routerLink="/tasks" checked autofocus>
-      <label class="custom-control-label" for="customRadioInline2">Asignar tareas</label>
-    </div>
-    <div class="custom-control custom-radio custom-control-inline">
-      <input *ngIf="state" type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" routerLink="/tasks/newtasks">
-      <label class="custom-control-label" for="customRadioInline1">Crear tareas</label>
-    </div>
-
-
-  </div>
-<router-outlet></router-outlet>
+ <router-outlet></router-outlet>
 </div>
 
 

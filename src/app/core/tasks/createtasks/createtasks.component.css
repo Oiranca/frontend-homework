@@ -4,10 +4,15 @@
   border-radius: 40px;
 }
 
+
 #text-register {
   text-align: center;
   color: #40AFFF;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  font-weight: bold;
+  border-top: 1px solid #F29F24;
+  border-bottom: 1px solid #F29F24;
 
 }
 
@@ -23,8 +28,13 @@
   border-color: #F29F24;
 }
 
-#inputNameTask, #inputDescription{
+#nameTasks, #inputDescription{
   font-family: 'Merriweather', serif;
   border: 1px solid #F29F24;
   font-size: 16px;
+}
+.spanAlert{
+  color: red;
+  font-family: 'Merriweather', serif;
+
 }

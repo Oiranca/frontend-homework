@@ -9,7 +9,7 @@ import { equalEmail, equalpassword } from '../../../validation/app.validator';
 })
 export class RegisteradminComponent implements OnInit {
   validationRegister: FormGroup;
-
+  isSubmitted: boolean = false;
 
   constructor(private fb: FormBuilder) {
 
@@ -23,8 +23,18 @@ export class RegisteradminComponent implements OnInit {
   createValidator() {
 
     this.validationRegister = this.fb.group({
-      name: ['', Validators.required],
-      lastName: ['', Validators.required],
+      name: ['', Validators.compose([
+        Validators.required,
+        Validators.minLength(3),
+        Validators.maxLength(30),
+        Validators.pattern('^[a-zA-Z ]*$')
+      ])],
+      lastName: ['', Validators.compose([
+        Validators.required,
+        Validators.minLength(3),
+        Validators.maxLength(30),
+        Validators.pattern('^[a-zA-Z ]*$')
+      ])],
       password: ['', Validators.compose([
         Validators.required, Validators.minLength(8),
         Validators.maxLength(20), Validators.pattern(/z-a/)
@@ -34,8 +44,14 @@ export class RegisteradminComponent implements OnInit {
         Validators.required, Validators.email
       ])],
       reEmail: ['', Validators.required],
-      nameHome: ['', Validators.required],
 
+      /* TODO: Buscar que el nombre de la casa no sea el mismo*/
+      nameHome: ['', Validators.compose([
+        Validators.required,
+        Validators.minLength(3),
+        Validators.maxLength(30),
+        Validators.pattern('^[a-zA-Z ]*$')
+      ])]
 
     }, {
       validators: [equalpassword, equalEmail]
@@ -46,19 +62,22 @@ export class RegisteradminComponent implements OnInit {
 
 
   checkPassword(): boolean {
-    return this.validationRegister.hasError('notequalpass') &&
-      this.validationRegister.get('password').dirty &&
-      this.validationRegister.get('rePass').dirty;
+    return this.validationRegister.hasError('notequalpass') && this.validationRegister.get('password').dirty;
   }
 
   checkEmail(): boolean {
     return this.validationRegister.hasError('notequalEmail') &&
-      this.validationRegister.get('email').dirty &&
-      this.validationRegister.get('reEmail').dirty;
+      this.validationRegister.get('email').dirty;
   }
 
 
+  onRegistrationFormSubmit() {
+    this.isSubmitted = true;
+    if (this.validationRegister.valid) {
+      console.log('User Registration Form Submit', this.validationRegister.value);
+    }
 
+  }
 
 }
 

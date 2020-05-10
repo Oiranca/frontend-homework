@@ -1,18 +1,19 @@
 <div class="container">
 
-  <div class="display-4 mt-3 justify-content-center" id="text-register">
-    <p>Asignar Tareas</p>
+  <div class="mt-1">
+
+    <h1 id="text-register">Asignar Tareas</h1>
 
   </div>
 
-  <div class="row mt-3 justify-content-around">
+  <div class="row p-3 justify-content-around">
     <ngb-datepicker [displayMonths]="displayMonths" [navigation]="navigation"
                     [showWeekNumbers]="showWeekNumbers" [outsideDays]="outsideDays">
     </ngb-datepicker>
 
   </div>
 
-  <form class="form-row mt-3">
+  <form class="form-row">
     <div class="col-md">
       <label class="labelsAssign" for="selectFamily">Selecciona un familiar</label>
       <select class="form-control" id="selectFamily">
@@ -35,9 +36,7 @@
     </div>
   </form>
 
-
-
-    <div class="form-row justify-content-center m-5">
+    <div class="form-row justify-content-center m-3">
       <button class="btn btn-outline-primary button-login" type="button">Aceptar</button>
     </div>
 

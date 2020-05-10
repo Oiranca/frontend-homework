@@ -1,0 +1,19 @@
+<div id="modal-content-wrapper">
+  <div class="modal-header" id="modalRoleTitle">
+    <p class="modal-title">Selecciona una opción</p>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal()" >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body mx-auto">
+    <button class="btn btn-outline-primary modalBody" type="button" data-dismiss="modal" routerLink="/register/admin"
+            (click)="closeModal()">Administrador
+    </button>
+    <button class="btn btn-outline-primary modalBody" type="button" data-dismiss="modal" routerLink="/register/family"
+            (click)="closeModal()">Familiar
+    </button>
+  </div>
+  <div class="modal-footer justify-content-center" id="footer-home">
+    <p>&copy; Home|worK</p>
+  </div>
+</div>

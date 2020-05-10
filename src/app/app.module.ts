@@ -19,6 +19,12 @@ import { ManagefamilyComponent } from './core/managefamily/managefamily.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterfamilyComponent } from './core/register/component/registerfamily/registerfamily.component';
 import { RegisteradminComponent } from './core/register/component/registeradmin/registeradmin.component';
+import { ModalComponent } from './core/login/modal/modal.component';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ModalpasswordComponent } from './core/profiles/modals/modalpassword/modalpassword.component';
+import { ModalemailComponent } from './core/profiles/modals/modalemail/modalemail.component';
 
 
 @NgModule({
@@ -35,7 +41,10 @@ import { RegisteradminComponent } from './core/register/component/registeradmin/
     ProfilesComponent,
     ManagefamilyComponent,
     RegisterfamilyComponent,
-    RegisteradminComponent
+    RegisteradminComponent,
+    ModalComponent,
+    ModalpasswordComponent,
+    ModalemailComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +53,9 @@ import { RegisteradminComponent } from './core/register/component/registeradmin/
     FormsModule,
     ReactiveFormsModule,
     routing,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
