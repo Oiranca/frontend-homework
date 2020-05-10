@@ -1,0 +1,47 @@
+<div id="modal-content-wrapper">
+  <div class="modal-header" id="modalRoleTitle">
+    <p class="modal-title">Introduce el email nuevo</p>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal()" >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="validationRegister" (ngSubmit)="onRegistrationFormSubmit()">
+      <div class="form-row">
+        <div class="form-group col-md">
+          <label class="labels-input" for="email">Email</label>
+          <input type="email" class="form-control" placeholder="Email" id="email" formControlName="email" autofocus>
+
+          <div *ngIf="validationRegister.get('email').errors && isSubmitted">
+            <div *ngIf="validationRegister.get('email').hasError('required')">
+              <span class="spanAlert">Campo email obligatorio </span>
+
+            </div>
+
+            <div *ngIf="validationRegister.get('email').hasError('email')">
+              <span class="spanAlert">Formato del email incorrecto </span>
+
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-md">
+          <label class="labels-input" for="reEmail">Repetir email</label>
+          <input type="email" class="form-control" placeholder="Repetir email" id="reEmail" formControlName="reEmail"
+                 autofocus>
+          <div *ngIf="checkEmail()">
+            <span class="spanAlert">Email no coincide </span>
+          </div>
+
+        </div>
+      </div>
+      <div class="form-row justify-content-center">
+        <button class="btn btn-outline-primary btnForm" type="submit">Aceptar</button>
+      </div>
+    </form>
+
+  </div>
+  <div class="modal-footer justify-content-center" id="footer-home">
+    <p>&copy; Home|worK</p>
+  </div>
+</div>
+
