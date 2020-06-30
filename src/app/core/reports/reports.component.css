@@ -31,10 +31,12 @@
   background: #0C66A6;
   color: snow;
   font-size: 20px;
+  text-align: center;
 }
 
 .scope-style{
   color: #0C66A6;
   font-family: 'Merriweather', serif;
    border-bottom:2px solid #F29F24;
+  text-align: center;
 }
