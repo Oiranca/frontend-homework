@@ -27,7 +27,6 @@ import { NgbCalendar, NgbDate } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ReportsComponent implements OnInit {
   hoveredDate: NgbDate | null = null;
-
   fromDate: NgbDate;
   toDate: NgbDate | null = null;
 
@@ -45,6 +44,7 @@ export class ReportsComponent implements OnInit {
       this.toDate = null;
       this.fromDate = date;
     }
+    console.log(date);
   }
 
   isHovered(date: NgbDate) {
